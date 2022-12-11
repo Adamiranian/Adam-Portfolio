@@ -1,43 +1,136 @@
 *{
-box-sizing: border-box;
-padding: 0;
-margin: 0;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+  
 }
 
-body{
+.hero{
+    
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(1, 1, 1, 0.3),rgba(12,3,52,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+  
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
    
-    background-color: rgb(230, 235, 236);
-    font-style: italic;
-}
-
-.info {
-color: rgb(8, 8, 8);
-border: 30px solid rgb(181, 170, 151) ;
-background-color: rgb(181, 170, 151) ;
 
 }
 
-.header{
-    
-        padding: 20px;
-        font-family: Trebuchet MS;
-        background-color: #2a607c;
-        color: #ffffff;
-    
+nav ul li a{
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    font-size: 29px;
+    font-weight: bold;
     
 }
-.header div {
-    padding-top: 0.5px;
-    margin-right: 20px;
-    float: right;
-    font-family: Gill Sans;
-    font-size: 20px;
-    
+
+.content{
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 160px;
+    color: #191919;
+    font-weight: 600;
 }
 
 .photo{
-padding-left: 5in;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
     
+    
+}
+
+@media (min-aspect-ratio:16/9){
+    .photo{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .photo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+   
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+
+}
