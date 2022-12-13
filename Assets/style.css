@@ -77,6 +77,7 @@ nav ul li a:hover{
     bottom: 0%;
     top: 0%;
     left: 0%;
+   
     
     
 }
@@ -282,7 +283,7 @@ text-align: center;
   border: 5px solid white;
   text-transform: capitalize;
   cursor: pointer;
-  border-radius: 0px;
+  border-radius: 3px;
   transition: 1.5s;
   
 }
