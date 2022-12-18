@@ -374,4 +374,9 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
         }
     
 }
+@media screen and (max-width: 1030px) {
+    nav ul li a{
+        font-size: 6px;
 
+    }
+}
