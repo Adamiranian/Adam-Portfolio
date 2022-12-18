@@ -321,6 +321,7 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
     color: white;
 }
 
+/* Media Queries*/
 
 @media screen and (max-width:1450px) {
    nav ul li a {
@@ -352,5 +353,25 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
     nav ul li a{
         font-size: 10px;
     }
+}
+
+@media screen and (max-width: 1212px) {
+    .photo{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 1187px) {
+    nav ul li a{
+        font-size: 8px;
+
+    }
+}
+@media screen and (max-width: 1130px) {
+    html, body{
+        width:100%;
+        overflow-x:hidden;
+        }
+    
 }
 
