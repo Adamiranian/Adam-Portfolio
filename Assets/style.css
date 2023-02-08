@@ -2,7 +2,7 @@
    box-sizing: border-box;
    padding: 0;
    margin: 0;
-  
+   font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
@@ -25,6 +25,7 @@
 nav{
     width: 100%;
     position: fixed;
+    font-size: 20px;
     top: 0;
     left: 0;
     padding: 20px 8%;
@@ -52,8 +53,8 @@ nav ul li a{
     color: white;
     font-size: 23px;
     font-weight: bold;
-    transition: 1.5s;
-    border: 3.5px solid white;
+    transition: .5s;
+    
     text-transform: capitalize;
     cursor: pointer;
     border-radius: 5px;
@@ -61,10 +62,10 @@ nav ul li a{
     
 }
 nav ul li a:hover{
-    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162);
-    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162); 
+    color: rgb(61, 113, 162);
 
 }
+
 .content{
     text-align: center;
     position: relative;
@@ -80,6 +81,7 @@ nav ul li a:hover{
 
 .photo{
     position: absolute;
+    align-items: center;
     right: 0%;
     bottom: 0%;
     top: 0%;
@@ -96,6 +98,7 @@ nav ul li a:hover{
 
 @media (max-aspect-ratio:16/9){
     .photo{
+        position: absolute;
         width: auto;
         height: 100%;
     }
@@ -107,11 +110,12 @@ nav ul li a:hover{
 .about{
     width: 100%;
     padding: 100px 0px;
+    padding-top: 2in;
     background-color: #191919;
 }
 .about img{
-    height: auto;
-    width: 430px;
+    height: 400px;
+    width: 365px;
 }
 .about-text{
     width: 550px;
@@ -180,8 +184,8 @@ text-align: center;
     height: 365px;
     width: 335px;
     padding: 50px 35px;
-    background: #bababa;
-    border-radius: 20px;
+    background: #c6c6c6;
+    border-radius: 15px;
     margin: 60px;
     position: relative;
     overflow: hidden;
@@ -210,20 +214,21 @@ text-align: center;
     text-align: center;
     width: 100px;
     padding: 7px;
+    
     font-size: 20px;
     text-decoration: none;
     color: #191919;
-    border: 5px solid #191919;
+    border: 3px solid #000000;
     text-transform: capitalize;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 1.5s;
+    border-radius: 10px;
+    transition: .5s;
 
 
 }
 .card .button:hover{
-    box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
-    box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange; 
+    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162);
+    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162);
 }
 /* contact section start*/
 
@@ -292,13 +297,13 @@ text-align: center;
   text-transform: capitalize;
   cursor: pointer;
   border-radius: 3px;
-  transition: 1.5s;
+  transition: .5s;
   
 }
 
 .contact-text ul li a:hover{
-box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
-box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;           
+    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162);
+    box-shadow: 0 5px 50px 0 rgb(61, 113, 162) inset, 0 5px 50px 0 rgb(61, 113, 162);       
 
 
 }
@@ -312,6 +317,8 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
     background-color:  #191919;
     position: relative;
     padding: 0 5%;
+    padding-top: 1in;
+    padding-bottom: 1in;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,9 +331,21 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
 
 /* Media Queries*/
 
+
+
+@media screen and (max-width:1876px) {
+   .photo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+   } }
+
+
+
 @media screen and (max-width:1450px) {
    nav ul li a {
-    font-size: 15px;
+    font-size: 20px;
     
    }
 }
@@ -346,15 +365,12 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
     
     }
    nav ul li a {
-    font-size: 14px;
+    font-size: 15px;
+    margin-left: 35px;
+    
    }
 }
 
-@media screen and (max-width: 1220px){
-    nav ul li a{
-        font-size: 10px;
-    }
-}
 
 @media screen and (max-width: 1212px) {
     .photo{
@@ -377,7 +393,7 @@ box-shadow: 0 5px 50px 0 orange inset, 0 5px 50px 0 orange;
 }
 @media screen and (max-width: 1030px) {
     nav ul li a{
-        font-size: 6px;
+        font-size: 10px;
 
     }
 }
